@@ -9,7 +9,7 @@ public class book extends LitePalSupport{
     private String author;
     private double price;
     private int page;
-    private String name;
+    private String name; 
 
     public int getId() {
         return id;
