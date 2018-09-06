@@ -3,6 +3,7 @@ package com.example.administrator.newsapp;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,5 +54,6 @@ public class newsAdapter extends RecyclerView.Adapter<newsAdapter.ViewHolder>{
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         news newtitlt = news.get(i);
         viewHolder.textView.setText(newtitlt.getTitle());
+        Log.d("sglqw",viewHolder.textView.getText().toString());
     }
 }
